@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xirui Tian's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005bb5;
+            padding: 1em 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        section {
+            padding: 2em;
+            margin: 1em auto;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0073e6;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin: 0.5em 0 0.2em;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 0.7em;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Xirui Tian's Personal Website</h1>
+</header>
+
+<nav>
+    <a href="#about">关于我</a>
+    <a href="#experience">工作经历</a>
+    <a href="#education">教育背景</a>
+    <a href="#projects">项目作品</a>
+    <a href="#skills">技能</a>
+    <a href="#contact">联系方式</a>
+</nav>
+
+<section id="about">
+    <h2>关于我</h2>
+    <p>我叫Xirui Tian，是一名心理学专业的毕业生，拥有丰富的研究经验和扎实的学术背景。</p>
+</section>
+
+<section id="experience">
+    <h2>工作经历</h2>
+    <ul>
+        <li>在中国科学院心理研究所实习，期间参与了多个重要项目。</li>
+    </ul>
+</section>
+
+<section id="education">
+    <h2>教育背景</h2>
+    <p>我于2023年毕业于加州大学圣地亚哥分校，获得心理学学位，GPA为3.83。</p>
+</section>
+
+<section id="projects">
+    <h2>项目作品</h2>
+    <ul>
+        <li>已发表的两篇英文论文：
+            <ul>
+                <li><a href="#" target="_blank">论文1链接</a></li>
+                <li><a href="#" target="_blank">论文2链接</a></li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>技能</h2>
+    <ul>
+        <li>数据分析</li>
+        <li>实验设计</li>
+        <li>心理测量</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>联系方式</h2>
+    <p>邮箱：<a href="mailto:xitian@ucsd.edu">xitian@ucsd.edu</a></p>
+    <p>电话：<a href="tel:+18583050228">+1 858-305-0228</a></p>
+
+    <h3>联系我</h3>
+    <form class="contact-form">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">邮箱：</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">信息：</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">发送</button>
+    </form>
+</section>
+
+</body>
+</html>
